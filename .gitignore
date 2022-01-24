@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+*.zip
+build
+css
+package-lock.json
+.idea
+
+# Vim
+*~
+*.swp
+
+# Jest generated files
+coverage/
+.scannerwork/
+junit.xml
+sonar-report.xml

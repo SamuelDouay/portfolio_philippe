@@ -1,0 +1,27 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production && sass src/styles/styles.scss:public/css/styles.css --style compressed",
+    "watch": "webpack --mode=development --watch",
+    "start": "serve public -s -l tcp://0.0.0.0:8000",
+    "scss": "sass --watch src/styles/styles.scss:public/css/styles.css"
+  },
+  "author": "Samuel Douay",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.2",
+    "prettier": "^2.4.1",
+    "serve": "^12.0.1",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0"
+  }
+}
